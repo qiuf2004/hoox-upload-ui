@@ -1,0 +1,84 @@
+.content {
+  max-height: 500px;
+  overflow: auto;
+}
+.list {
+  height: 90px;
+  margin: 8px 0px;
+  border: 1px solid #eaeaea;
+  .file {
+    display: flex;
+    justify-content: space-between;
+    margin: 8px;
+    .name {
+      font-size: 14px;
+      color: #333;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+    .opt {
+      display: flex;
+      .pause {
+        cursor: pointer;
+        width: 16px;
+        height: 16px;
+        margin-right: 8px;
+        background: url('../../images/pause.png');
+      }
+      .continue {
+        cursor: pointer;
+        width: 16px;
+        height: 16px;
+        margin-right: 8px;
+        background: url('../../images/continue.png');
+      }
+    }
+  }
+  .size {
+    margin: 8px 24px;
+    font-size: 12px;
+    color: #999;
+  }
+  .percent {
+    margin: 0px 24px;
+  }
+}
+
+.upload_message {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+  right: 0;
+  height: 40px;
+  width: 174px;
+  margin-top: 100px;
+  line-height: 40px;
+  border-radius: 4px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.15);
+  background: #fff;
+  z-index: 1;
+  .image {
+    height: 21px;
+    width: 21px;
+    margin-top: 8px;
+    background: url('../../images/upload.png') no-repeat;
+  }
+  span {
+    font-size: 14px;
+    color: #333;
+  }
+  .upload_num {
+    position: absolute;
+    bottom: 10px;
+    left: 24px;
+    width: 16px;
+    height: 12px;
+    line-height: 12px;
+    color: #fff;
+    text-align: center;
+    background: #ff4e4e;
+    border-radius: 5px;
+  }
+}
